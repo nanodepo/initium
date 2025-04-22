@@ -1,15 +1,24 @@
 <?php
 
+use Livewire\Attributes\Layout;
 use Livewire\Volt\Component;
 
-new class extends Component {
+new
+#[Layout('layouts.guest')]
+class extends Component {
 
 } ?>
 
 <x-ui::layout>
 
     <x-slot name="content">
-        asdasd
+
+        <div class="flex flex-col justify-center items-center h-96 text-5xl">
+            <div>Less</div>
+            <div>Than</div>
+            <div>Three</div>
+        </div>
+
     </x-slot>
 
 </x-ui::layout>

@@ -3,9 +3,7 @@
 use Livewire\Attributes\Layout;
 use Livewire\Volt\Component;
 
-new
-#[Layout('layouts.guest')]
-class extends Component {
+new class extends Component {
 
 } ?>
 
@@ -14,9 +12,7 @@ class extends Component {
     <x-slot name="content">
 
         <div class="flex flex-col justify-center items-center h-96 text-5xl">
-            <div>Less</div>
-            <div>Than</div>
-            <div>Three</div>
+            <div>{{ auth()->user()?->name }}</div>
         </div>
 
     </x-slot>

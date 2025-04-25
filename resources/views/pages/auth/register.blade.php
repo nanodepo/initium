@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\User;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Validation\ValidationException;
 use Livewire\Attributes\Layout;
@@ -24,21 +25,25 @@ class extends Component {
     {
         $this->validate();
 
+        $user = $this->register();
+
         event(new Registered($user));
 
         Auth::login($user);
 
-        $this->redirectRoute('org.create');
+        $this->redirectRoute('home');
     }
 
-    private function authenticate(): void
+    private function register(): User
     {
-        if (!Auth::attempt(['email' => $this->email, 'password' => $this->password], true)) {
-            throw ValidationException::withMessages([
-                'email' => trans('auth.failed'),
-            ]);
-        }
+        return User::create([
+            'name' => $this->name,
+            'email' => $this->email,
+            'password' => Hash::make($this->password),
+            'admin' => false,
+        ]);
     }
+
 } ?>
 
 <div class="flex flex-col justify-center items-center flex-auto">

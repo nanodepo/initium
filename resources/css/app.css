@@ -1,4 +1,3 @@
 @import 'tailwindcss';
-@import './uikit.css';
-
-@source '../../vendor/nanodepo/gems-ui/src/resources/views';
+@import '../../vendor/nanodepo/nexus/src/resources/css/uikit.css';
+@source '../../vendor/nanodepo/nexus/src/resources/views';

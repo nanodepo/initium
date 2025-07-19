@@ -9,13 +9,14 @@
     ],
     "license": "MIT",
     "require": {
-        "php": "^8.2",
+        "php": "^8.4",
         "laravel/framework": "^12.0",
         "laravel/tinker": "^2.10.1",
         "livewire/livewire": "^3.6",
         "livewire/volt": "^1.7",
-        "nanodepo/gems-ui": "^v2.1",
-        "nanodepo/heroicons": "^2.1"
+        "nanodepo/apex": "^2.2",
+        "nanodepo/nexus": "^2.2",
+        "spatie/laravel-data": "^4.4"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",

@@ -37,13 +37,19 @@
     </x-slot>
 
     <x-slot name="right" class="gap-2 mr-3">
-        <x-ui::circle x-on:click="$dispatch('open-onboarding')" icon="light-bulb" />
-
         @livewire('switch-mode')
+
+        @if(auth()->check())
+            <a href="{{ route('dashboard') }}">
+                <x-ui::avatar :url="thumbnail(auth()->user()->avatar, '96x96', 'profile')" class="w-12 h-12" />
+            </a>
+        @else
+            <x-ui::circle :href="route('auth.login')" icon="arrow-right-end-on-rectangle" />
+        @endif
     </x-slot>
 </x-ui::nav.panel>
 
-<div class="flex flex-col flex-auto">
+<div x-data="container" x-ref="container" class="relative flex flex-col flex-auto overflow-hidden">
     {{ $slot }}
 </div>
 

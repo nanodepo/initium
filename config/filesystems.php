@@ -55,6 +55,12 @@ return [
             'throw' => false,
         ],
 
+        'icons' => [
+            'driver' => 'local',
+            'root' => base_path('vendor/nanodepo/apex/src/Views/Components'),
+            'throw' => false,
+        ],
+
         's3' => [
             'driver' => 's3',
             'key' => env('AWS_ACCESS_KEY_ID'),

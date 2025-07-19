@@ -1,8 +1,7 @@
 <?php
 
-use App\Models\User;
+use App\Domains\User\Models\User;
 use Illuminate\Auth\Events\Registered;
-use Illuminate\Validation\ValidationException;
 use Livewire\Attributes\Layout;
 use Livewire\Attributes\Validate;
 use Livewire\Volt\Component;

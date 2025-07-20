@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" @class(['dark' => ui()->dark])>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" @class(['dark' => settings()->dark])>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,10 +8,10 @@
     <title>{{ $title ?? config('app.name', 'NanoDepo') }}</title>
 
     <!-- Theme -->
-    <x-ui::theme :color="ui()->color" />
+    <x-ui::theme :color="settings()->color" />
     <script>
-        window.drawer = @js(ui()->drawer);
-        window.primaryColor = @js(ui()->color);
+        window.drawer = @js(settings()->drawer);
+        window.primaryColor = @js(settings()->color);
     </script>
 
     <!-- Fonts -->

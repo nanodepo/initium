@@ -2643,16 +2643,16 @@
         },
         {
             "name": "league/commonmark",
-            "version": "2.7.0",
+            "version": "2.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/commonmark.git",
-                "reference": "6fbb36d44824ed4091adbcf4c7d4a3923cdb3405"
+                "reference": "10732241927d3971d28e7ea7b5712721fa2296ca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/commonmark/zipball/6fbb36d44824ed4091adbcf4c7d4a3923cdb3405",
-                "reference": "6fbb36d44824ed4091adbcf4c7d4a3923cdb3405",
+                "url": "https://api.github.com/repos/thephpleague/commonmark/zipball/10732241927d3971d28e7ea7b5712721fa2296ca",
+                "reference": "10732241927d3971d28e7ea7b5712721fa2296ca",
                 "shasum": ""
             },
             "require": {
@@ -2681,7 +2681,7 @@
                 "symfony/process": "^5.4 | ^6.0 | ^7.0",
                 "symfony/yaml": "^2.3 | ^3.0 | ^4.0 | ^5.0 | ^6.0 | ^7.0",
                 "unleashedtech/php-coding-standard": "^3.1.1",
-                "vimeo/psalm": "^4.24.0 || ^5.0.0"
+                "vimeo/psalm": "^4.24.0 || ^5.0.0 || ^6.0.0"
             },
             "suggest": {
                 "symfony/yaml": "v2.3+ required if using the Front Matter extension"
@@ -2746,7 +2746,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-05-05T12:20:28+00:00"
+            "time": "2025-07-20T12:47:49+00:00"
         },
         {
             "name": "league/config",
@@ -3493,16 +3493,16 @@
         },
         {
             "name": "nanodepo/nexus",
-            "version": "v2.2.1",
+            "version": "v2.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nanodepo/nexus.git",
-                "reference": "9dfa43ce8af0db7fce44b3539287b55fb2b6a74b"
+                "reference": "5d47ffc60fdb2d6d9d68f4fcc39e673c2e64836f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nanodepo/nexus/zipball/9dfa43ce8af0db7fce44b3539287b55fb2b6a74b",
-                "reference": "9dfa43ce8af0db7fce44b3539287b55fb2b6a74b",
+                "url": "https://api.github.com/repos/nanodepo/nexus/zipball/5d47ffc60fdb2d6d9d68f4fcc39e673c2e64836f",
+                "reference": "5d47ffc60fdb2d6d9d68f4fcc39e673c2e64836f",
                 "shasum": ""
             },
             "require": {
@@ -3518,7 +3518,7 @@
             "extra": {
                 "laravel": {
                     "providers": [
-                        "NanoDepo\\Nexus\\Providers\\UIServiceProvider"
+                        "NanoDepo\\Nexus\\Providers\\NexusServiceProvider"
                     ]
                 }
             },
@@ -3544,9 +3544,9 @@
             "description": "Nexus - Laravel Blade UI Kit",
             "support": {
                 "issues": "https://github.com/nanodepo/nexus/issues",
-                "source": "https://github.com/nanodepo/nexus/tree/v2.2.1"
+                "source": "https://github.com/nanodepo/nexus/tree/v2.2.4"
             },
-            "time": "2025-07-18T19:42:58+00:00"
+            "time": "2025-07-20T16:10:12+00:00"
         },
         {
             "name": "nesbot/carbon",
